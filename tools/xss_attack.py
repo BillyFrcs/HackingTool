@@ -16,7 +16,7 @@ class Dalfox(HackingTool):
     TITLE = "DalFox (Finder of XSS)"
     DESCRIPTION = "XSS Scanning and Parameter Analysis tool."
     INSTALL_COMMANDS = [
-        "sudo apt-get install golang",
+        "sudo apt install golang",
         "sudo git clone https://github.com/hahwul/dalfox",
         "cd dalfox;go install"
     ]

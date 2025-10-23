@@ -17,7 +17,7 @@ console = Console(theme=_theme)
 
 class SteganoHide(HackingTool):
     TITLE = "SteganoHide"
-    INSTALL_COMMANDS = ["sudo apt-get install steghide -y"]
+    INSTALL_COMMANDS = ["sudo apt install steghide -y"]
 
     def run(self):
         choice_run = input(

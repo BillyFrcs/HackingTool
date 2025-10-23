@@ -27,8 +27,8 @@ class UpdateTool(HackingTool):
 
     def update_sys(self):
         os.system("sudo apt update && sudo apt full-upgrade -y")
-        os.system("sudo apt-get install tor openssl curl && sudo apt-get update tor openssl curl")
-        os.system("sudo apt-get install python3-pip")
+        os.system("sudo apt install tor openssl curl && sudo apt update tor openssl curl")
+        os.system("sudo apt install python3-pip")
 
     def update_ht(self):
         os.system("sudo chmod +x /etc/;"

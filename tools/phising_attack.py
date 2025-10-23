@@ -63,7 +63,7 @@ class SocialFish(HackingTool):
     TITLE = "SocialFish"
     DESCRIPTION = "Automated Phishing Tool & Information Collector NOTE: username is 'root' and password is 'pass'"
     INSTALL_COMMANDS = [
-        "sudo git clone https://github.com/UndeadSec/SocialFish.git && sudo apt-get install python3 python3-pip python3-dev -y",
+        "sudo git clone https://github.com/UndeadSec/SocialFish.git && sudo apt install python3 python3-pip python3-dev -y",
         "cd SocialFish && sudo python3 -m pip install -r requirements.txt"
     ]
     RUN_COMMANDS = ["cd SocialFish && sudo python3 SocialFish.py root pass"]
@@ -94,7 +94,7 @@ class Evilginx2(HackingTool):
                   "[+]export PATH=$PATH:/usr/local/go/bin:$GOPATH/bin \n" \
                   "[+]Then load it with source ~/.profiles."
     INSTALL_COMMANDS = [
-        "sudo apt-get install git make;go get -u github.com/kgretzky/evilginx2",
+        "sudo apt install git make;go get -u github.com/kgretzky/evilginx2",
         "cd $GOPATH/src/github.com/kgretzky/evilginx2;make",
         "sudo make install;sudo evilginx"
     ]

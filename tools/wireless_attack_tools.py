@@ -43,7 +43,7 @@ class pixiewps(HackingTool):
         "Points, the so-called pixie dust attack"
     )
     INSTALL_COMMANDS = [
-        "sudo git clone https://github.com/wiire/pixiewps.git && apt-get -y install build-essential",
+        "sudo git clone https://github.com/wiire/pixiewps.git && apt -y install build-essential",
         "cd pixiewps*/ && make",
         "cd pixiewps*/ && sudo make install && wget https://pastebin.com/y9Dk1Wjh",
     ]
@@ -137,7 +137,7 @@ class Fastssh(HackingTool):
     )
     INSTALL_COMMANDS = [
         "sudo git clone https://github.com/Z4nzu/fastssh.git && cd fastssh && sudo chmod +x fastssh.sh",
-        "sudo apt-get install -y sshpass netcat",
+        "sudo apt install -y sshpass netcat",
     ]
     RUN_COMMANDS = ["cd fastssh && sudo bash fastssh.sh --scan"]
     PROJECT_URL = "https://github.com/Z4nzu/fastssh"
@@ -154,7 +154,7 @@ class Howmanypeople(HackingTool):
         "Please check your country's laws"
     )
     INSTALL_COMMANDS = [
-        "sudo apt-get install tshark"
+        "sudo apt install tshark"
         ";sudo python3 -m pip install howmanypeoplearearound"
     ]
     RUN_COMMANDS = ["howmanypeoplearearound"]
