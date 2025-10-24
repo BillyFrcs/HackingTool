@@ -246,7 +246,7 @@
 - Create the docker image 
 
 ```bash
-docker bulid -t vgpastor/hackingtool .
+docker build -t vgpastor/hackingtool .
 ```
 
 ### Run as container 
